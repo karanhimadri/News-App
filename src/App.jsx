@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setLoadingState(true);
     fetch(
-      "https://gnews.io/api/v4/search?q=example&lang=en&country=in&max=10&apikey=e0bf6a45a1af7ec14e8def195ec336bc"
+      "https://gnews.io/api/v4/top-headlines?country=in&category=general&apikey=93cbebf3e1ff0aa8c47715a0ea03b3a9"
     )
       .then((res) => res.json())
       .then((data) => {
