@@ -1,0 +1,43 @@
+.app-logo {
+  margin-right: 100px;
+}
+.logo-image {
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.news-img img {
+  border-radius: 5px;
+  height: 95%;
+}
+.news-container {
+  border: 2px solid rgb(178, 175, 175);
+  width: 70%;
+  margin-left: 200px;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 15px;
+}
+.news-title {
+  margin-bottom: 10px;
+}
+.card-content {
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.news-description {
+  font-weight: 500;
+}
+.news-date {
+  font-weight: 500;
+  color: rgb(64, 64, 102);
+}
+.news-inner-container {
+  display: flex;
+}
+.spinner {
+  margin-top: 200px;
+}
+.footer {
+  margin-top: 300px;
+}
