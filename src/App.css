@@ -1,43 +1,126 @@
-.app-logo {
-  margin-right: 100px;
-}
-.logo-image {
-  height: 50px;
-  border-radius: 50px;
-  margin-right: 20px;
-}
-.news-img img {
-  border-radius: 5px;
-  height: 95%;
-}
 .news-container {
-  border: 2px solid rgb(178, 175, 175);
-  width: 70%;
-  margin-left: 200px;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
   padding: 16px;
-  border-radius: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin: 16px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.news-title {
-  margin-bottom: 10px;
-}
-.card-content {
-  margin-left: 5px;
-  margin-top: 10px;
-}
-.news-description {
-  font-weight: 500;
-}
-.news-date {
-  font-weight: 500;
-  color: rgb(64, 64, 102);
-}
+
 .news-inner-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.spinner {
-  margin-top: 200px;
+
+.news-img {
+  margin-bottom: 16px;
+  width: 100%;
 }
-.footer {
-  margin-top: 300px;
+
+.news-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-content {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.news-title {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.news-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.sub-content {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.news-content {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.news-url a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-url a:hover {
+  text-decoration: underline;
+}
+
+.news-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .news-inner-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .news-img {
+    width: 40%;
+    margin-right: 16px;
+  }
+
+  .card-content {
+    text-align: left;
+    width: 60%;
+  }
+
+  .sub-content {
+    text-align: left;
+  }
+
+  .news-content {
+    font-size: 16px;
+  }
+
+  .news-title {
+    font-size: 28px;
+  }
+
+  .news-description {
+    font-size: 18px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .news-container {
+    padding: 8px;
+  }
+
+  .news-title {
+    font-size: 20px;
+  }
+
+  .news-description {
+    font-size: 14px;
+  }
+
+  .news-content {
+    font-size: 12px;
+  }
+
+  .news-url {
+    font-size: 14px;
+  }
 }

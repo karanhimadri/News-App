@@ -8,7 +8,6 @@ function Header() {
               href="/"
               className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none app-logo"
             >
-              <img className="logo-image" src="/newsImg.png" alt="" />
               <h2>G.News</h2>
             </a>
 
